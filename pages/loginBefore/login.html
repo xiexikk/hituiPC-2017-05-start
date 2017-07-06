@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>嗨推学院-知名网络推广实战培训平台</title>
+    <link rel="shortcut icon" href="../../public/images/favicon.ico">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_lemhis1loyqcwhfr.css">
+    <link rel="stylesheet" href="../../public/pugins/libs/layui-master/css/layui.css">
+    <link rel="stylesheet" href="../../public/pugins/libs/validator/dist/jquery.validator.css">
+    <!--[if lt IE 9]>
+    <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="../../public/css/base.css">
+    <link rel="stylesheet" href="../../public/css/common.css">
+    <link rel="stylesheet" href="../../public/css/loginBefore.css">
+</head>
+<body>
+
+<!--toolBar-->
+<script type="text/html" id="myToolBar" ></script>
+
+<!--header-->
+<script type="text/html" id="myHeader"></script>
+
+<!--content-->
+<div class="content bgColor">
+    <div class="login-bg"></div>
+    <div class="webLogin" id="web_qr_login">
+        <div class="panel-header">
+            <span class="panel-title">账号登录</span>
+            <span class="panel-title ">微信登录</span>
+        </div>
+
+        <div class="WebBlock tabDiv">
+            <div class="panel-body padder-md">
+                <form>
+                    <div class="error" id="error" style="display: none"></div>
+                    <div class="input-group input-group-change">
+                         <span class="input-group-addon">
+                             <i class="iconfont icon-user icon-change"></i>
+                         </span>
+                        <input class="form-control" placeholder="邮箱/用户名/手机号" name="username" data-rule="required;username">
+                    </div>
+                    <div class="input-group input-group-change">
+                         <span class="input-group-addon">
+                             <i class="iconfont icon-mima icon-change"></i>
+                         </span>
+                        <input class="form-control last-passsword" type="password" placeholder="请输入登录密码，6-12个字符" name="password" data-rule="required;password">
+                    </div>
+                    <div class="input-group borderNone">
+                        <div class="borderChange inlineBlock divWidth input-group-change">
+                                <span class="input-group-addon">
+                             <i class="iconfont icon-yanzhengma icon-change"></i>
+                         </span>
+                            <input class="form-control from-control-change" type="password" placeholder="请输入验证码" name="verify">
+                        </div>
+                        <img src="../../public/images/Login_verify.png" alt="" height="38" width="120" class="ml18">
+                    </div>
+
+                    <div class="form-group clearfix">
+                        <label class="checkbox i-checks text-left ft13">
+                            <input name="" id="rmb" onclick="rmbme(this)" type="checkbox" value="" class="ck"><i></i>
+                            <input id="rememberme" name="rememberme" value="" type="hidden">
+                            我已经阅读并接受<span class="">《用户协议》</span>
+                        </label>
+                        <a class="pull-right text mr14 fr" target="_blank" href="/system/initForgetPassword">忘记密码</a>
+                    </div>
+                    <input name=""  type="button" class="btn webBtn w-full mt18 mb20" value="登录" onclick="fromLogin(this)">
+                </form>
+            </div>
+            <div class="panel-footer clearfix mb20 textRight">
+                <p  class="mr50  clearfix">
+                    <a href="#" class="ft16">没有账号</a>
+                    <a href="register.html" class="commonColor ft16">立即注册</a>
+                </p>
+            </div>
+        </div>
+
+        <div style="display: none" class="tabDiv">
+            <img src="../../public/images/wx_login.png" alt="" class="wxLogin">
+            <div class="fonts mt14">请使用微信二维码登录</div>
+            <div class="fonts mt4 mb20">嗨推学院</div>
+        </div>
+
+    </div>
+</div>
+
+<!--footer-->
+<script type="text/html" id="myFooter"></script>
+
+<script src="../../public/js/jquery-1.11.2.min.js"></script>
+<script src="../../public/js/common.js"></script>
+<script src="../../public/js/from.js"></script>
+<script src="../../public/pugins/libs/layui-master/layui.js"></script>
+<script src="../../public/pugins/libs/validator/dist/jquery.validator.js?local=zh-CN"></script>
+<script>
+    // 插件validator.js
+    $('form').validator({
+        theme: "simple_right", //消息皮肤
+        msgClass: "n-bottom"   //消息将自动显示在输入框右边
+    });
+</script>
+
+</body>
+</html>

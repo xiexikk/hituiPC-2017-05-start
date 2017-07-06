@@ -1,0 +1,12 @@
+{
+  "ewmApp": {
+    "tit":"扫码下载APP1",
+    "img": "../../public/images/ewmApp.png",
+    "alt": "嗨推APP1"
+  },
+  "ewmWx": {
+    "tit":"关注微信公众号",
+    "img": "../../public/images/ewmWx.png",
+    "alt": "嗨推微信公众号"
+  }
+}
